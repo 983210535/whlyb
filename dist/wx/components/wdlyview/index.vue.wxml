@@ -1,0 +1,44 @@
+<import src="/modules/mpvue-wxparse/src/wxParse.vue.wxml" /><template name="03f186b0">
+  <view class="_div data-v-6618869d">
+    <view class="_div data-v-6618869d wdlyview" wx:if="{{lytype=='6'}}">
+      <view class="_div data-v-6618869d cradBox" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}" wx:for="{{blockData}}" wx:for-index="index" wx:for-item="item">
+        <view class="_div data-v-6618869d itemicon" wx:if="{{item.userHead}}">
+          <image src="{{domain.usericon+item.userHead}}" alt class="_img data-v-6618869d"></image>
+        </view>
+        <view class="_div data-v-6618869d itemicon" wx:else>
+          <image src="{{domain.defaltUsericon}}" alt class="_img data-v-6618869d"></image>
+        </view>
+        <view class="_div data-v-6618869d top"><label class="_span data-v-6618869d title"><template data="{{...$root[$kk+'0_'+index], $root}}" is="5789fdbf"></template></label></view>
+        <view class="_div data-v-6618869d desc"><label class="_span data-v-6618869d">
+            <van-icon class="_van-icon data-v-6618869d iconimg" name="clock-o"></van-icon>
+            {{item.dateline_txt}}
+          </label> <label class="_span data-v-6618869d">
+            <van-icon class="_van-icon data-v-6618869d iconimg" name="user-circle-o"></van-icon> <label wx:if="{{item.anonymousState==1}}" class="_span data-v-6618869d"></label><label wx:else class="_span data-v-6618869d">{{item.nickName}}</label>
+          </label> <label class="_span data-v-6618869d">
+            <van-icon class="_van-icon data-v-6618869d iconimg" name="question-o"></van-icon>
+            {{item.typeId_txt+'　'+item.domainId_txt}}
+          </label></view>
+      </view>
+    </view>
+    <view class="_div data-v-6618869d wdlyview" wx:else>
+      <view class="_div data-v-6618869d cradBox" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'1_'+index}}" data-comkey="{{$k}}" wx:for="{{blockData}}" wx:for-index="index" wx:for-item="item">
+        <view class="_div data-v-6618869d itemicon" wx:if="{{item.userHead}}">
+          <image src="{{domain.usericon+item.userHead}}" alt class="_img data-v-6618869d"></image>
+        </view>
+        <view class="_div data-v-6618869d itemicon" wx:else>
+          <image src="{{domain.defaltUsericon}}" alt class="_img data-v-6618869d"></image>
+        </view>
+        <view class="_div data-v-6618869d top"><label class="_span data-v-6618869d title"><template data="{{...$root[$kk+'4_'+index], $root}}" is="5789fdbf"></template></label></view>
+        <view class="_div data-v-6618869d desc"><label class="_span data-v-6618869d">
+            <van-icon class="_van-icon data-v-6618869d iconimg" name="clock-o"></van-icon>
+            {{item.dateline_txt}}
+          </label> <label class="_span data-v-6618869d">
+            <van-icon class="_van-icon data-v-6618869d iconimg" name="user-circle-o"></van-icon> <label wx:if="{{item.anonymousState==1}}" class="_span data-v-6618869d"></label><label wx:else class="_span data-v-6618869d">{{item.nickName}}</label>
+          </label> <label class="_span data-v-6618869d">
+            <van-icon class="_van-icon data-v-6618869d iconimg" name="question-o"></van-icon>
+            {{item.typeId_txt+'　'+item.domainId_txt}}
+          </label></view>
+      </view>
+    </view>
+  </view>
+</template>

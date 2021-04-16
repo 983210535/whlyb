@@ -1,0 +1,109 @@
+@import "../../common/vendor.wxss";
+
+page.data-v-26cd1841 {
+  background: #fff;
+}
+.main.data-v-26cd1841 {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  font-size: 24rpx;
+}
+.rows.data-v-26cd1841 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 686rpx;
+  height: 108rpx;
+  margin: auto;
+  border-bottom: 2rpx solid #F2F2F2;
+}
+.content_s.data-v-26cd1841 {
+  width: 686rpx;
+  margin: auto;
+  border-bottom: 2rpx solid #F2F2F2;
+}
+.content.data-v-26cd1841 {
+  display: flex;
+  justify-content: space-between;
+  margin: 32rpx 0 0;
+}
+.title.data-v-26cd1841 {
+  font-size: 32rpx;
+  color: #000;
+  padding-right: 10rpx;
+}
+.colon.data-v-26cd1841 {
+  color: #FF1716;
+}
+.rows ._input.data-v-26cd1841,
+.txt.data-v-26cd1841,
+.txt2.data-v-26cd1841 {
+  margin: 0 32rpx;
+  flex: 1;
+}
+.txt.data-v-26cd1841 {
+  height: 100rpx !important;
+}
+.txt2.data-v-26cd1841 {
+  height: 70rpx !important;
+}
+.imgBox.data-v-26cd1841 {
+  margin-right: 40rpx;
+  padding-top: 16rpx;
+  overflow: hidden;
+}
+.imgList.data-v-26cd1841 {
+  width: 120rpx;
+  height: 120rpx;
+  float: left;
+  margin: 0 30rpx 20rpx 0;
+  padding: 10rpx;
+  border-radius: 10rpx;
+  box-shadow: 0 0 8rpx 0 #e5e5e5;
+  position: relative;
+}
+.delBtn.data-v-26cd1841 {
+  position: absolute;
+  top: -12rpx;
+  right: 0;
+  color: #999;
+}
+.imgList ._img.data-v-26cd1841 {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.imgUpload.data-v-26cd1841 {
+  width: 144rpx;
+  height: 144rpx;
+  border: 2rpx solid #DBDBDB;
+  border-radius: 16rpx;
+  font-size: 60rpx;
+  color: #A0A0A0;
+  text-align: center;
+  margin-bottom: 32rpx;
+}
+.check.data-v-26cd1841 {
+  margin: 60rpx 0;
+  text-align: center;
+  font-size: 20rpx;
+  color: #9f9f9f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.check ._span.data-v-26cd1841 {
+  color: #F54645;
+}
+.btn.data-v-26cd1841 {
+  padding: 0 32rpx;
+}
+.btn ._button.data-v-26cd1841 {
+  width: 100%;
+  height: 72rpx;
+  border-radius: 36rpx;
+  background: #F54645;
+  color: white;
+  font-size: 28rpx;
+}

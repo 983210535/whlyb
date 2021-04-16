@@ -1,0 +1,48 @@
+<template name="a0adf142">
+  <view class="_div data-v-34079a8a main">
+    <view class="_div data-v-34079a8a register">
+      <view class="_div data-v-34079a8a topimg">
+        <view class="_div data-v-34079a8a bgimg">
+          <image src="/static/images/regimg.png" alt class="_img data-v-34079a8a"></image>
+        </view>
+        <view class="_div data-v-34079a8a usericon">
+          <image src="/static/images/usericon.jpeg" alt class="_img data-v-34079a8a"></image>
+        </view>
+      </view>
+      <view class="_div data-v-34079a8a box">
+        <van-cell-group class="_van-cell-group data-v-34079a8a areabox">
+          <view class="_div data-v-34079a8a dobox">
+            <view class="_div data-v-34079a8a boxBottom"><label class="_span data-v-34079a8a">
+                <view class="_i data-v-34079a8a">*</view>用户名
+              </label> <input class="_input data-v-34079a8a inputitem" type="text" value="{{username}}" bindinput="handleProxy" clearable label="用户名" placeholder="请输入用户名" error-message="{{errormsg}}" border="{{true}}" data-eventid="{{'0'}}" data-comkey="{{$k}}" /></view>
+          </view>
+          <view class="_div data-v-34079a8a dobox">
+            <view class="_div data-v-34079a8a boxBottom"><label class="_span data-v-34079a8a">
+                <view class="_i data-v-34079a8a">*</view>笔名
+              </label> <input class="_input data-v-34079a8a inputitem" type="text" value="{{writename}}" bindinput="handleProxy" clearable placeholder="请输入笔名" error-message="{{errormsg}}" border="{{true}}" data-eventid="{{'1'}}" data-comkey="{{$k}}" /></view>
+          </view>
+          <view class="_div data-v-34079a8a dobox">
+            <view class="_div data-v-34079a8a boxBottom"><label class="_span data-v-34079a8a">
+                <view class="_i data-v-34079a8a">*</view>密码
+              </label> <input class="_input data-v-34079a8a inputitem" type="password" value="{{password}}" bindinput="handleProxy" clearable placeholder="请输入密码" error-message="{{errormsg}}" border="{{true}}" data-eventid="{{'2'}}" data-comkey="{{$k}}" /></view>
+          </view>
+          <view class="_div data-v-34079a8a dobox">
+            <view class="_div data-v-34079a8a boxBottom"><label class="_span data-v-34079a8a">
+                <view class="_i data-v-34079a8a">*</view>确认密码
+              </label> <input class="_input data-v-34079a8a inputitem" type="password" value="{{comfirmpassword}}" bindinput="handleProxy" clearable placeholder="请再次输入密码" error-message="{{errormsg}}" border="{{true}}" data-eventid="{{'3'}}" data-comkey="{{$k}}" /></view>
+          </view>
+        </van-cell-group>
+        <view class="_div data-v-34079a8a desc">以下内容只有管理员可见</view>
+        <van-cell-group class="_van-cell-group data-v-34079a8a areabox">
+          <view class="_div data-v-34079a8a dobox">
+            <view class="_div data-v-34079a8a boxBottom"><label class="_span data-v-34079a8a">真实姓名</label> <input class="_input data-v-34079a8a inputitem" type="text" value="{{realname}}" bindinput="handleProxy" clearable placeholder="请输入真实姓名" error-message="{{errormsg}}" border="{{true}}" data-eventid="{{'4'}}" data-comkey="{{$k}}" /></view>
+          </view>
+          <view class="_div data-v-34079a8a dobox">
+            <view class="_div data-v-34079a8a boxBottom"><label class="_span data-v-34079a8a">身份证号</label> <input class="_input data-v-34079a8a inputitem" type="number" value="{{idcard}}" bindinput="handleProxy" clearable placeholder="请输入身份证号码" error-message="{{errormsg}}" border="{{true}}" data-eventid="{{'5'}}" data-comkey="{{$k}}" /></view>
+          </view>
+        </van-cell-group>
+      </view> <button class="_button data-v-34079a8a submitbtn" bindtap="handleProxy" data-eventid="{{'6'}}" data-comkey="{{$k}}">提交</button>
+    </view>
+    <van-toast id="van-toast" class="_van-toast data-v-34079a8a"></van-toast>
+  </view>
+</template>

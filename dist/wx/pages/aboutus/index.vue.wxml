@@ -1,0 +1,13 @@
+<template name="725930f6">
+  <view class="_div data-v-5a614e25 main">
+    <view class="_div data-v-5a614e25 topImg">
+      <image src="/static/images/mine_top.png" alt class="_img data-v-5a614e25"></image>
+    </view>
+    <view class="_div data-v-5a614e25 xqbox">
+      <view class="_div data-v-5a614e25 logoimg">
+        <image src="/static/images_pro/header.png" alt class="_img data-v-5a614e25"></image>
+      </view>
+      <view class="_div data-v-5a614e25 desc"> 长江网武汉城市留言板，是武汉市网上群众工作部官方互联网平台，由中央网信办批准的全国重点新闻网站长江网（www.cjn.cn）负责运营。投诉、建议、求助、咨询、点赞等，这里连通武汉各级党委政府，您留言，马上办！ </view>
+    </view>
+  </view>
+</template>

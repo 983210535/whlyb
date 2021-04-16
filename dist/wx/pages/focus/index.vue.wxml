@@ -1,0 +1,9 @@
+<import src="/components/msgList/index.vue.wxml" /><template name="eadeac3a">
+  <view class="_div data-v-168f70dc main">
+    <block wx:if="{{arrData.length<1}}">
+      <image src="/static/images_pro/null.png" alt class="_img data-v-168f70dc"></image>
+    </block>
+    <block wx:else><template data="{{...$root[$kk+'0'], $root}}" is="84373fdc"></template></block>
+    <view class="_div data-v-168f70dc nodata" wx:if="{{nodatashow}}">没有更多数据了</view>
+  </view>
+</template>

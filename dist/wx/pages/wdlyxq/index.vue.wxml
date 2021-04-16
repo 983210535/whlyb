@@ -1,0 +1,100 @@
+<import src="/modules/mpvue-wxparse/src/wxParse.vue.wxml" />
+<import src="/components/comment/index.vue.wxml" /><template name="5e347184">
+  <view class="_div data-v-744b132f main">
+    <view class="_div data-v-744b132f xbox">
+      <view class="_div data-v-744b132f threads">
+        <view class="_div data-v-744b132f head">
+          <view class="_div data-v-744b132f title">
+            {{viewxq.subject}}
+          </view>
+          <view class="_p data-v-744b132f">{{ viewxq.nickName }} </view>
+          <view class="_p data-v-744b132f"><label class="_span data-v-744b132f">
+              {{ viewxq.dateline_txt }}
+            </label> <label class="_span data-v-744b132f seaTime"> 查询码：{{viewxq.queryCode}}
+            </label></view>
+        </view>
+        <view class="_div data-v-744b132f share"><button open-type="share" class="_button data-v-744b132f zf"></button>
+          <image src="/static/images_pro/zf.png" class="_img data-v-744b132f fx"></image>
+        </view>
+      </view>
+      <view class="_div data-v-744b132f content"><template wx:if="{{viewxq.content}}" data="{{...$root[$kk+'0'], $root}}" is="5789fdbf"></template></view>
+      <view class="_div data-v-744b132f fjBox" wx:if="{{viewxq.attachementsList&&viewxq.attachementsList!=''}}">
+        <view class="_div data-v-744b132f fjdesc">留言附件：</view>
+        <view class="_div data-v-744b132f fjBox">
+          <view class="_ul data-v-744b132f">
+            <view wx:key="index" key="{{index}}" wx:if="{{item.isimage}}" wx:for="{{viewxq.attachementsList}}" wx:for-index="index" wx:for-item="item" class="_li data-v-744b132f">
+              <image src="{{mainIp+item.attachment}}" alt bindtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}" class="_img data-v-744b132f"></image>
+            </view>
+            <view wx:if="{{!item.isimage}}" wx:key="item.aid+1" key="{{item.aid+1}}" class="_p data-v-744b132f file" bindtap="handleProxy" data-eventid="{{'1_'+index}}" data-comkey="{{$k}}" wx:for="{{viewxq.attachementsList}}" wx:for-index="index" wx:for-item="item">{{ item.fileName }}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-744b132f">
+      <view wx:key="index3" key="{{index3}}" wx:for="{{viewxq.fid_txt}}" wx:for-index="index3" wx:for-item="item" class="_div data-v-744b132f">
+        <view wx:if="{{item.handlestate==0||item.handlestate==-1||item.handlestate==-2}}" class="_div data-v-744b132f">
+          <view class="_div data-v-744b132f answerBox">
+            <view class="_div data-v-744b132f blzInfo"><label class="_span data-v-744b132f">办理中</label></view>
+          </view>
+        </view>
+        <view wx:if="{{item.handlestate==1}}" class="_div data-v-744b132f">
+          <view class="_div data-v-744b132f answerBox">
+            <view wx:key="index6" key="{{index6}}" wx:for="{{viewxq.answersList}}" wx:for-index="index6" wx:for-item="answersItem" class="_div data-v-744b132f">
+              <view wx:if="{{item.forumUnid == answersItem.fid}}" class="_div data-v-744b132f">
+                <view class="_div data-v-744b132f answerContent">
+                  <view class="_div data-v-744b132f topdesc">
+                    <view class="_div data-v-744b132f dftitle">
+                      <view class="_div data-v-744b132f dfwz">
+                        <view class="_div data-v-744b132f da">答</view>
+                        <view wx:if="{{answersItem.organization&&answersItem.organization!=null}}" class="_div data-v-744b132f">{{answersItem.organization}}</view>
+                        <view wx:else class="_div data-v-744b132f">{{item.organization}}</view>
+                      </view> <label class="_span data-v-744b132f dfsj">{{answersItem.dateline_txt}}</label>
+                    </view>
+                  </view>
+                  <view class="_div data-v-744b132f lyContent">
+                    <rich-text class="_div data-v-744b132f brnbsp" style="background:#f5f5f5;" nodes="{{(answersItem.asContent)}}"></rich-text>
+                  </view>
+                  <view wx:if="{{answersItem.attachementsList&&answersItem.attachementsList.length>0}}" class="_div data-v-744b132f">
+                    <view class="_div data-v-744b132f fjdesc titledesc fjtitlebox">回复附件：</view>
+                    <view class="_div data-v-744b132f fj">
+                      <view class="_ul data-v-744b132f">
+                        <view class="_li data-v-744b132f img" wx:if="{{answerfjitem.isimage}}" wx:key="answerfjitem.aid" key="{{answerfjitem.aid}}" wx:for="{{answersItem.attachementsList}}" wx:for-index="index" wx:for-item="answerfjitem">
+                          <image src="{{mainIp+answerfjitem.thumb}}" bindtap="handleProxy" alt data-eventid="{{'2_'+index3+'-'+index6+'-'+index}}" data-comkey="{{$k}}" class="_img data-v-744b132f"></image>
+                        </view>
+                        <view wx:if="{{!answerfjitem.isimage}}" wx:key="answerfjitem.aid+1" key="{{answerfjitem.aid+1}}" class="_p data-v-744b132f file" bindtap="handleProxy" data-eventid="{{'3_'+index3+'-'+index6+'-'+index}}" data-comkey="{{$k}}" wx:for="{{answersItem.attachementsList}}" wx:for-index="index" wx:for-item="answerfjitem">{{ answerfjitem.fileName }}</view>
+                      </view>
+                    </view>
+                  </view>
+                  <view class="_div data-v-744b132f dycpj" wx:if="{{answersItem.satisfaction!=3&&answersItem.satisfaction!=7&&answersItem.satisfaction!=9}}">
+                    <view class="_div data-v-744b132f satis">
+                      <view class="_div data-v-744b132f comment">
+                        <van-radio-group value="{{radio}}" bindchange="handleProxy" direction="horizontal" class="_van-radio-group data-v-744b132f myditem" data-eventid="{{'4_'+index3+'-'+index6}}" data-comkey="{{$k}}">
+                          <van-radio name="3" checked-color="#F54645" class="_van-radio data-v-744b132f">满意</van-radio>
+                          <van-radio name="7" checked-color="#F54645" class="_van-radio data-v-744b132f">比较满意</van-radio>
+                          <van-radio name="9" checked-color="#F54645" class="_van-radio data-v-744b132f">不满意</van-radio>
+                        </van-radio-group>
+                        <view class="_p data-v-744b132f">请评价：</view> <textarea class="_textarea data-v-744b132f comments" value="{{message}}" bindinput="handleProxy" name id cols="30" rows="10" placeholder="{{placeholder}}" data-eventid="{{'5_'+index3+'-'+index6}}" data-comkey="{{$k}}" /></view></view> <button class="_button data-v-744b132f pj_btn" bindtap="handleProxy" data-eventid="{{'6_'+index3+'-'+index6}}" data-comkey="{{$k}}">评价</button></view> <view class="_div data-v-744b132f feedbackContent" wx:if="{{answersItem.satisfaction>0&&answersItem.fdid&&answersItem.fdid!=''}}"><view class="_div data-v-744b132f timepj"><view wx:if="{{answersItem.secSatisfaction}}" class="_div data-v-744b132f"><label wx:if="{{answersItem.satisfaction == 3}}" class="_span data-v-744b132f satisfaction">
+                                一次评价： 满意
+                              </label><label wx:elif="{{answersItem.satisfaction == 7}}" class="_span data-v-744b132f satisfied">
+                                一次评价： 比较满意
+                              </label><label wx:else class="_span data-v-744b132f dissatis">
+                                一次评价： 不满意
+                              </label></view><view wx:else class="_div data-v-744b132f"><label wx:if="{{answersItem.satisfaction == 3}}" class="_span data-v-744b132f satisfaction">
+                                评价： 满意
+                              </label><label wx:elif="{{answersItem.satisfaction == 7}}" class="_span data-v-744b132f satisfied">
+                                评价： 比较满意
+                              </label><label wx:else class="_span data-v-744b132f dissatis">
+                                评价： 不满意
+                              </label></view> <label class="_span data-v-744b132f">{{ answersItem.feedbackCreateTime }}</label></view> <view class="_div data-v-744b132f onepj" wx:if="{{answersItem.feedbackContent}}">
+                            {{ answersItem.feedbackContent }}
+                          </view></view></view> <view wx:if="{{answersItem.satisfaction>0}}" class="_div data-v-744b132f"><view class="_div data-v-744b132f answerContent" wx:if="{{answersItem.secondContent}}"><view class="_div data-v-744b132f dftitle"><view class="_div data-v-744b132f dfwz"><view class="_div data-v-744b132f da">答</view> <view wx:if="{{answersItem.organization&&answersItem.organization!=null}}" class="_div data-v-744b132f">
+                                    {{answersItem.organization}}二次回复
+                                  </view></view> <view class="_div data-v-744b132f dfsj">{{answersItem.secanswerDatelineStr}}</view></view> <view class="_div data-v-744b132f lyContent"><rich-text class="_div data-v-744b132f brnbsp" style="background:#f5f5f5;" nodes="{{(answersItem.secondContent)}}"></rich-text></view> <view wx:if="{{answersItem.secondAttachementsList&&answersItem.secondAttachementsList.length>0}}" class="_div data-v-744b132f"><view class="_div data-v-744b132f fjdesc titledesc fjtitlebox">回复附件：</view> <view class="_div data-v-744b132f fj"><view class="_ul data-v-744b132f"><view wx:if="{{answerfjitem.isimage==1}}" wx:key="index" key="{{index}}" wx:for="{{answersItem.secondAttachementsList}}" wx:for-index="index" wx:for-item="answerfjitem" class="_li data-v-744b132f"><image src="{{mainIp+answerfjitem.thumb}}" alt bindtap="handleProxy" data-eventid="{{'7_'+index3+'-'+index6+'-'+index}}" data-comkey="{{$k}}" class="_img data-v-744b132f"></image></view> <view wx:if="{{answerfjitem.isimage==0}}" wx:key="index+1" key="{{index+1}}" class="_p data-v-744b132f file" bindtap="handleProxy" data-eventid="{{'8_'+index3+'-'+index6+'-'+index}}" data-comkey="{{$k}}" wx:for="{{answersItem.secondAttachementsList}}" wx:for-index="index" wx:for-item="answerfjitem">{{ answerfjitem.fileName }}</view></view></view></view> <view class="_div data-v-744b132f feedbackContent" wx:if="{{answersItem.secondContent&&answersItem.handleState==4&&answersItem.fdid&&answersItem.fdid!=''&&answersItem.isAutoFeedBack!=1}}"><view class="_div data-v-744b132f timepj"><label wx:if="{{answersItem.secSatisfaction == 3}}" class="_span data-v-744b132f satisfaction">
+                                  二次评价： 满意
+                                </label><label wx:elif="{{answersItem.secSatisfaction == 7}}" class="_span data-v-744b132f satisfied">
+                                  二次评价： 比较满意
+                                </label><label wx:else class="_span data-v-744b132f dissatis">
+                                  二次评价： 不满意
+                                </label> <label class="_span data-v-744b132f">{{ answersItem.secFeedbackCreateTime }}</label></view> <view class="_div data-v-744b132f onepj" wx:if="{{answersItem.secFeedbackContent}}">
+                                {{ answersItem.secFeedbackContent }}
+                              </view></view> <view class="_div data-v-744b132f dycpj" wx:if="{{answersItem.secondState>0&&answersItem.secondContent&&answersItem.handleState==3}}"><view class="_div data-v-744b132f satis"><view class="_div data-v-744b132f comment"><van-radio-group value="{{radio}}" bindchange="handleProxy" direction="horizontal" class="_van-radio-group data-v-744b132f myditem" data-eventid="{{'9_'+index3+'-'+index6}}" data-comkey="{{$k}}"><van-radio name="3" checked-color="#F54645" class="_van-radio data-v-744b132f">满意</van-radio> <van-radio name="7" checked-color="#F54645" class="_van-radio data-v-744b132f">比较满意</van-radio> <van-radio name="9" checked-color="#F54645" class="_van-radio data-v-744b132f">不满意</van-radio></van-radio-group> <view class="_p data-v-744b132f">请评价：</view> <textarea class="_textarea data-v-744b132f comments" value="{{message}}" bindinput="handleProxy" name id cols="30" rows="10" placeholder="{{placeholder}}" data-eventid="{{'10_'+index3+'-'+index6}}" data-comkey="{{$k}}" /></view></view> <button class="_button data-v-744b132f pj_btn" bindtap="handleProxy" data-eventid="{{'11_'+index3+'-'+index6}}" data-comkey="{{$k}}">评价</button></view></view></view></view></view></view></view></view> <template data="{{...$root[$kk+'9'], $root}}" is="693162b2"></template></view> <van-toast id="van-toast" class="_van-toast data-v-744b132f"></van-toast></view></template>

@@ -1,0 +1,17 @@
+export const isAuthenticated = state => state.isAuthenticated
+export const user = state => state.user
+export const userId = state => state.userId
+export const openId = state => state.openId
+export const tabledata = state => state.openId
+export const token = state => state.token
+export const singleItem = state => state.singleItem
+export const lylxid = state => state.lylxid
+export const lylyid = state => state.lylyid
+export const lywzid = state => state.lywzid
+export const lywzdata = state => state.lywzdata
+export const listdata = state => state.listdata
+export const newcontent = state => state.newcontent
+export const wdlyitem = state => state.wdlyitem
+export const currentLywz = state => state.currentLywz
+export const searchdata = state => state.searchdata
+export const tid = state => state.tid

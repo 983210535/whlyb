@@ -1,0 +1,46 @@
+<template name="74174654">
+  <view class="_div data-v-608d23fe main">
+    <view class="_div data-v-608d23fe nav">
+      <image src="/static/images_pro/banner.png" alt class="_img data-v-608d23fe"></image>
+    </view>
+    <view class="_div data-v-608d23fe message">
+      <view class="_div data-v-608d23fe clickMe" bindtap="handleProxy" wx:if="{{token}}" data-eventid="{{'1'}}" data-comkey="{{$k}}">点我留言</view><button class="_button data-v-608d23fe clickMe" wx:else open-type="getUserInfo" bindgetuserinfo="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">点我留言</button>
+      <view class="_div data-v-608d23fe good">
+        <view class="_p data-v-608d23fe">投诉 | 意见 | 建议 | 咨询 | 求助 | 点赞</view>
+        <view class="_div data-v-608d23fe search" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}"><input type="text" placeholder="可输入关键字或查询码搜索" disabled class="_input data-v-608d23fe" />
+          <view class="_div data-v-608d23fe img">
+            <image src="/static/images_pro/search.png" alt class="_img data-v-608d23fe"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-608d23fe main">
+      <view class="_div data-v-608d23fe content">
+        <view wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'3_'+index}}" data-comkey="{{$k}}" wx:for="{{dataArr}}" wx:for-index="index" wx:for-item="item" class="_div data-v-608d23fe">
+          <block wx:if="{{index == 0}}">
+            <view class="_div data-v-608d23fe first">
+              <image wx:if="{{item.PICATTACH.length > 0 &&item.PICATTACH[0].ABSURL}}" src="{{item.PICATTACH[0].ABSURL}}" alt class="_img data-v-608d23fe"></image>
+              <image wx:else src="/static/images_pro/noPic.png" alt class="_img data-v-608d23fe"></image>
+              <view class="_div data-v-608d23fe mainNr">
+                <view class="_p data-v-608d23fe titleBig source">{{ item.DOCTITLE }}</view>
+                <view class="_p data-v-608d23fe abstract">{{ item.DOCABSTRACT }}</view>
+              </view>
+              <view class="_div data-v-608d23fe nameTime"><label class="_span data-v-608d23fe">{{ item.SOURCENAME }} <label class="_span data-v-608d23fe time"> {{ item.DOCRELTIME }}</label></label></view>
+            </view>
+          </block>
+          <block wx:elif="{{item.PICATTACH.length<3}}">
+            <view class="_div data-v-608d23fe second">
+              <image wx:if="{{item.PICATTACH.length > 0 &&item.PICATTACH[0].ABSURL}}" src="{{item.PICATTACH[0].ABSURL}}" alt class="_img data-v-608d23fe"></image>
+              <image wx:else src="/static/images_pro/noPics.png" alt class="_img data-v-608d23fe"></image>
+              <view class="_div data-v-608d23fe mainSec">
+                <view class="_p data-v-608d23fe title">{{ item.DOCTITLE }}</view>
+                <view class="_div data-v-608d23fe nameTimeSec"><label class="_span data-v-608d23fe source">{{ item.SOURCENAME }} <label class="_span data-v-608d23fe time"> {{ item.DOCRELTIME }}</label></label></view>
+              </view>
+            </view>
+          </block>
+          <block wx:else></block>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

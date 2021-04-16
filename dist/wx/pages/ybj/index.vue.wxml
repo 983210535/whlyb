@@ -1,0 +1,35 @@
+<import src="/components/wdlyview/index.vue.wxml" /><template name="64a5b8e8">
+  <view class="_div data-v-364b3c8a main">
+    <view class="_div data-v-364b3c8a topImg">
+      <image src="/static/images/mine_top.png" alt class="_img data-v-364b3c8a"></image>
+    </view>
+    <view class="_div data-v-364b3c8a cardBox">
+      <view class="_div data-v-364b3c8a desc">
+        <view class="_div data-v-364b3c8a title"></view>
+      </view>
+      <view class="_div data-v-364b3c8a list">
+        <van-row class="_van-row data-v-364b3c8a">
+          <van-col span="12" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_van-col data-v-364b3c8a">
+            <view class="_div data-v-364b3c8a imgicon">
+              <image src="{{user.avatarUrl}}" alt class="_img data-v-364b3c8a"></image>
+            </view>
+            <view class="_div data-v-364b3c8a icondesc">{{user.nickName}}</view>
+          </van-col>
+          <van-col span="12" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_van-col data-v-364b3c8a">
+            <view class="_div data-v-364b3c8a imgicon"><label wx:if="{{total>99}}" class="_span data-v-364b3c8a">
+                <van-icon size="32px" color="#61a8f1" name="checked" wx:if="{{total>99}}" info="99+" class="_van-icon data-v-364b3c8a"></van-icon>
+              </label><label wx:else class="_span data-v-364b3c8a"><label wx:if="{{total<1}}" class="_span data-v-364b3c8a">
+                  <van-icon size="32px" color="#61a8f1" name="checked" class="_van-icon data-v-364b3c8a"></van-icon>
+                </label><label wx:else class="_span data-v-364b3c8a">
+                  <van-icon size="32px" color="#61a8f1" name="checked" info="{{total}}" class="_van-icon data-v-364b3c8a"></van-icon>
+                </label></label></view>
+            <view class="_div data-v-364b3c8a icondesc">系统回复</view>
+          </van-col>
+        </van-row>
+      </view>
+    </view>
+    <view class="_div data-v-364b3c8a nodata" wx:if="{{total<1}}">暂无数据</view>
+    <view class="_div data-v-364b3c8a switchlist"><template data="{{...$root[$kk+'6'], $root}}" is="03f186b0"></template></view>
+    <view class="_div data-v-364b3c8a nodata" wx:if="{{nodatashow}}">没有更多数据</view>
+  </view>
+</template>

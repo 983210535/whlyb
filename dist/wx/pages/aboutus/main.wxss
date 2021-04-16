@@ -1,0 +1,42 @@
+@import "../../common/vendor.wxss";
+
+.main.data-v-5a614e25 {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  overflow: hidden;
+}
+.xqbox.data-v-5a614e25 {
+  margin: 30rpx;
+  box-shadow: 0 0 20rpx 0 #e5e5e5;
+  border-radius: 20rpx;
+  padding: 30rpx;
+  position: relative;
+  background: rgba(255, 255, 255, 1);
+}
+.topImg.data-v-5a614e25 {
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+}
+.topImg ._img.data-v-5a614e25 {
+  width: 100%;
+}
+.logoimg.data-v-5a614e25 {
+  width: 558rpx;
+  height: 228rpx;
+  margin: 40rpx auto;
+  overflow: hidden;
+}
+.logoimg ._img.data-v-5a614e25 {
+  width: 70%;
+  height: 70%;
+  display: block;
+  margin: 60rpx auto 20rpx;
+}
+.desc.data-v-5a614e25 {
+  font-size: 28rpx;
+  color: #666;
+  line-height: 48rpx;
+  text-indent: 2em;
+}

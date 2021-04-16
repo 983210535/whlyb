@@ -1,0 +1,42 @@
+<import src="/components/mymsgList/index.vue.wxml" />
+<import src="/modules/mpvue-wxparse/src/wxParse.vue.wxml" /><template name="7f9aaa66">
+  <view class="_div data-v-108a4e78 {dataArr.length >0?main : main2}">
+    <van-tabs value="{{active}}" bindchange="handleProxy" animated data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_van-tabs data-v-108a4e78">
+      <van-tab title="办理中" class="_van-tab data-v-108a4e78">
+        <block wx:if="{{dataArr.length >0 && type == 7}}"><template data="{{...$root[$kk+'0'], $root}}" is="088492a6"></template></block>
+        <block wx:else>
+          <view class="_div data-v-108a4e78">
+            <image src="/static/images_pro/null.png" alt class="_img data-v-108a4e78"></image>
+          </view>
+        </block>
+      </van-tab>
+      <van-tab title="部门回复" class="_van-tab data-v-108a4e78">
+        <block wx:if="{{dataArr.length > 0&& type == 6}}"><template data="{{...$root[$kk+'4'], $root}}" is="088492a6"></template></block>
+        <block wx:else>
+          <view class="_div data-v-108a4e78">
+            <image src="/static/images_pro/null.png" alt class="_img data-v-108a4e78"></image>
+          </view>
+        </block>
+      </van-tab>
+      <van-tab title="系统回复" class="_van-tab data-v-108a4e78">
+        <block wx:if="{{dataArrs.length > 0&& type == 9 }}">
+          <view class="_div data-v-108a4e78 xthf">
+            <view wx:key="index" key="{{index}}" class="_div data-v-108a4e78 msg {{[  (index < 3 ? true : '') ? 'bangHei' : '',  (index == 0 ? true : '') ? 'bangFir' : '']}}" wx:for="{{dataArrs}}" wx:for-index="index" wx:for-item="item">
+              <view class="_p data-v-108a4e78 title_s"><label class="_span data-v-108a4e78 title"><template data="{{...$root[$kk+'8_'+index], $root}}" is="5789fdbf"></template></label></view>
+              <view class="_p data-v-108a4e78 content"><template data="{{...$root[$kk+'9_'+index], $root}}" is="5789fdbf"></template></view>
+              <view class="_p data-v-108a4e78 btm"><label class="_span data-v-108a4e78">{{item.nickName}}</label> <label class="_span data-v-108a4e78">{{ item.dateline }}</label></view>
+              <view class="_div data-v-108a4e78 system"><label class="_span data-v-108a4e78">系统回复：</label>{{ item.deleteInfo }}
+              </view>
+            </view>
+          </view>
+        </block>
+        <block wx:else>
+          <view class="_div data-v-108a4e78">
+            <image src="/static/images_pro/null.png" alt class="_img data-v-108a4e78"></image>
+          </view>
+        </block>
+      </van-tab>
+    </van-tabs>
+    <view class="_div data-v-108a4e78 nodata" wx:if="{{nodatashow}}">没有更多数据了</view>
+  </view>
+</template>

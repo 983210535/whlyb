@@ -1,0 +1,16 @@
+<template name="2656febe">
+  <view class="_div data-v-301c0fe9 main">
+    <block wx:if="{{newsData.length > 0}}">
+      <view class="_div data-v-301c0fe9 box" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}" wx:for="{{newsData}}" wx:for-index="index" wx:for-item="item">
+        <view class="_p data-v-301c0fe9 content">{{ item.content }}</view>
+        <view class="_p data-v-301c0fe9 time">{{ item.createTime }}</view>
+      </view>
+      <view class="_div data-v-301c0fe9 nodata" hidden="{{!(nodatashow)}}">没有更多数据了</view>
+    </block>
+    <block wx:else>
+      <view class="_div data-v-301c0fe9">
+        <image src="/static/images_pro/null.png" alt class="_img data-v-301c0fe9"></image>
+      </view>
+    </block>
+  </view>
+</template>

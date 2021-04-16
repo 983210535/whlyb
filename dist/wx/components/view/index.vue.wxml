@@ -1,0 +1,25 @@
+<import src="/modules/mpvue-wxparse/src/wxParse.vue.wxml" /><template name="54e55a8e">
+  <view class="_div data-v-9ee5cefa viewlist">
+    <view class="_div data-v-9ee5cefa listitem" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+      <view class="_div data-v-9ee5cefa itemicon" wx:if="{{singleItem.userHead}}">
+        <image src="{{domain.usericon+singleItem.userHead}}" alt class="_img data-v-9ee5cefa"></image>
+      </view>
+      <view class="_div data-v-9ee5cefa itemicon" wx:else>
+        <image src="{{domain.defaltUsericon}}" alt class="_img data-v-9ee5cefa"></image>
+      </view>
+      <view class="_div data-v-9ee5cefa top"><label class="_span data-v-9ee5cefa title"><template data="{{...$root[$kk+'0'], $root}}" is="5789fdbf"></template></label> <label class="_span data-v-9ee5cefa blzt" wx:if="{{singleItem.answer_num > 0}}">已回复</label><label class="_span data-v-9ee5cefa blzt" wx:else>办理中</label></view>
+      <view class="_div data-v-9ee5cefa desc"><label class="_span data-v-9ee5cefa">
+          <van-icon class="_van-icon data-v-9ee5cefa iconimg" name="clock-o"></van-icon>
+          {{dotime}}
+        </label> <label wx:if="{{singleItem.anonymousState==1}}" class="_span data-v-9ee5cefa">
+          <van-icon class="_van-icon data-v-9ee5cefa iconimg" name="user-circle-o"></van-icon>
+        </label><label wx:else class="_span data-v-9ee5cefa">
+          <van-icon class="_van-icon data-v-9ee5cefa iconimg" name="user-circle-o"></van-icon>
+          {{singleItem.nickName}}
+        </label> <label class="_span data-v-9ee5cefa">
+          <van-icon class="_van-icon data-v-9ee5cefa iconimg" name="question-o"></van-icon>
+          {{singleItem.typeName}}　{{singleItem.domainName}}
+        </label></view>
+    </view>
+  </view>
+</template>

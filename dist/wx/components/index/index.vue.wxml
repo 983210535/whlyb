@@ -1,0 +1,12 @@
+<template name="615406a5">
+  <view class="_div data-v-9422de6c container">
+    <view class="_div data-v-9422de6c bang">
+      <view class="_div data-v-9422de6c come" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+        <image src="/static/images_pro/bang.png" alt class="_img data-v-9422de6c"></image> <label class="_span data-v-9422de6c">进入排行榜</label>
+      </view>
+      <view class="_div data-v-9422de6c qzdp" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}"> 群众点评 </view>
+    </view>
+    <view class="_div data-v-9422de6c top"><label class="_span data-v-9422de6c">区域</label> <label class="_span data-v-9422de6c">留言量</label> <label class="_span data-v-9422de6c">回复量</label></view>
+    <view class="_div data-v-9422de6c area" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'2_'+index}}" data-comkey="{{$k}}" wx:for="{{dataArr}}" wx:for-index="index" wx:for-item="item"><label class="_span data-v-9422de6c qymz">{{ item.name }}</label> <label class="_span data-v-9422de6c total">{{ item.tnumYear }}</label> <label class="_span data-v-9422de6c total total_t">{{ item.anumYear }}</label></view>
+  </view>
+</template>

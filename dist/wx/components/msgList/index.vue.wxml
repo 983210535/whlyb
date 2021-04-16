@@ -1,0 +1,11 @@
+<template name="84373fdc">
+  <view class="_div data-v-8153b792 main">
+    <view wx:key="index" key="{{index}}" bindtap="handleProxy" class="_div data-v-8153b792 msg" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}" wx:for="{{arr}}" wx:for-index="index" wx:for-item="item">
+      <view class="_div data-v-8153b792 title_s">
+        <rich-text class="_span data-v-8153b792 title" nodes="{{ item.subject}}"></rich-text> <label class="_span data-v-8153b792 handle handles" wx:if="{{item.handleState}}">已回复</label><label class="_span data-v-8153b792 handle" wx:else>办理中</label>
+      </view>
+      <rich-text class="_p data-v-8153b792 content" nodes="{{item.content}}"></rich-text>
+      <view class="_p data-v-8153b792 btm"><label class="_span data-v-8153b792">{{item.nickName}}</label> <label class="_span data-v-8153b792">{{ item.dateline }}</label></view>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,121 @@
+<import src="/modules/mpvue-wxparse/src/wxParse.vue.wxml" /><template name="1f640b92">
+  <view class="_div data-v-0bd9e93c main">
+    <view class="_div data-v-0bd9e93c topImg">
+      <image src="/static/images/mine_top.png" alt class="_img data-v-0bd9e93c"></image>
+    </view>
+    <view class="_div data-v-0bd9e93c xqbox">
+      <view class="_div data-v-0bd9e93c top">
+        <view class="_div data-v-0bd9e93c title"><template data="{{...$root[$kk+'0'], $root}}" is="5789fdbf"></template></view>
+      </view>
+      <view class="_div data-v-0bd9e93c desc"><label wx:if="{{lyxqData.anonymousState==1}}" class="_span data-v-0bd9e93c">
+          <van-icon class="_van-icon data-v-0bd9e93c iconimg" name="user-circle-o"></van-icon>
+        </label><label wx:else class="_span data-v-0bd9e93c">
+          <van-icon class="_van-icon data-v-0bd9e93c iconimg" name="user-circle-o"></van-icon>
+          {{lyxqData.nickName}}
+        </label> <label class="_span data-v-0bd9e93c">
+          <van-icon class="_van-icon data-v-0bd9e93c iconimg" name="clock-o"></van-icon>
+          {{lyxqData.dateline_txt}}
+        </label>
+        <view style="overflow:hidden;" class="_p data-v-0bd9e93c">
+          <van-icon class="_van-icon data-v-0bd9e93c iconimg" name="question-o"></van-icon> <label style="float:left;" class="_span data-v-0bd9e93c">
+            {{lyxqData.domainId_txt+'　'+lyxqData.typeId_txt}}
+          </label> <label style="float:left;" class="_span data-v-0bd9e93c"> 查询码：{{lyxqData.queryCode}}
+          </label>
+        </view>
+      </view>
+      <view class="_div data-v-0bd9e93c mainbox">
+        <view class="_div data-v-0bd9e93c nr"><template data="{{...$root[$kk+'5'], $root}}" is="5789fdbf"></template></view>
+        <view class="_div data-v-0bd9e93c fjBox" wx:if="{{lyxqData.attachementsList&&lyxqData.attachementsList!=''}}">
+          <view class="_div data-v-0bd9e93c fjdesc">留言附件：</view>
+          <view class="_div data-v-0bd9e93c fjBox">
+            <view class="_ul data-v-0bd9e93c">
+              <view wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}" wx:for="{{lyxqData.attachementsList}}" wx:for-index="index" wx:for-item="item" class="_li data-v-0bd9e93c">
+                <image src="{{mainIp+item.attachment}}" alt class="_img data-v-0bd9e93c"></image>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view wx:if="{{(!viewxq.answersList || viewxq.answersList.length < 1)&&viewxq.threadState==1&&viewxq.fidsNum>0 }}" class="_div data-v-0bd9e93c">
+        <view class="_div data-v-0bd9e93c answer" wx:key="index2" key="{{index2}}" wx:for="{{viewxq.fid_txt}}" wx:for-index="index2" wx:for-item="item">
+          <view class="_div data-v-0bd9e93c answerBox">
+            <view class="_div data-v-0bd9e93c blzInfo"><label class="_span data-v-0bd9e93c">{{item.organization}}正在办理中...</label>
+              <view class="_i data-v-0bd9e93c isanswer zzblz"></view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view wx:else class="_div data-v-0bd9e93c">
+        <view wx:key="index3" key="{{index3}}" wx:for="{{viewxq.fid_txt}}" wx:for-index="index3" wx:for-item="item" class="_div data-v-0bd9e93c">
+          <view wx:if="{{item.handlestate==0||item.handlestate==-1}}" class="_div data-v-0bd9e93c">
+            <view class="_div data-v-0bd9e93c answerBox">
+              <view class="_div data-v-0bd9e93c blzInfo"><label class="_span data-v-0bd9e93c">{{item.organization}}正在办理中</label>
+                <view class="_i data-v-0bd9e93c isanswer zzblz" style="display:inline-block;color:#ff9b00;"></view>...
+              </view>
+            </view>
+          </view>
+          <view wx:if="{{item.handlestate==1}}" class="_div data-v-0bd9e93c">
+            <view class="_div data-v-0bd9e93c answerBox">
+              <view wx:key="index6" key="{{index6}}" wx:for="{{viewxq.answersList}}" wx:for-index="index6" wx:for-item="answersItem" class="_div data-v-0bd9e93c">
+                <view wx:if="{{item.forumUnid == answersItem.fid}}" class="_div data-v-0bd9e93c">
+                  <view class="_div data-v-0bd9e93c answerContent">
+                    <view class="_div data-v-0bd9e93c topdesc"><label class="_span data-v-0bd9e93c itemTil">官方回复 </label>
+                      <view class="_div data-v-0bd9e93c"><label class="_span data-v-0bd9e93c itemTil">回复单位：</label> <label wx:if="{{answersItem.organization&&answersItem.organization!=null}}" class="_span data-v-0bd9e93c">{{answersItem.organization}}</label><label wx:else class="_span data-v-0bd9e93c">{{item.organization}}</label></view>
+                      <view class="_div data-v-0bd9e93c hfsj"><label class="_span data-v-0bd9e93c itemTil">回复时间：</label>
+                        {{answersItem.dateline_txt}}
+                      </view>
+                    </view>
+                    <view class="_div data-v-0bd9e93c"><label class="_span data-v-0bd9e93c itemTil">回复内容：</label>
+                      <rich-text class="_div data-v-0bd9e93c brnbsp" style="background:#f5f5f5;" nodes="{{(answersItem.asContent)}}"></rich-text>
+                    </view>
+                  </view>
+                  <view wx:if="{{answersItem.attachementsList&&answersItem.attachementsList.length>0}}" class="_div data-v-0bd9e93c">
+                    <view class="_div data-v-0bd9e93c titledesc fjtitlebox">回复附件：</view>
+                    <view class="_div data-v-0bd9e93c fj">
+                      <view class="_ul data-v-0bd9e93c">
+                        <view wx:if="{{answerfjitem.isimage==1}}" wx:key="answerfjitem.aid" key="{{answerfjitem.aid}}" bindtap="handleProxy" data-eventid="{{'1_'+index3+'-'+index6+'-'+index}}" data-comkey="{{$k}}" wx:for="{{answersItem.attachementsList}}" wx:for-index="index" wx:for-item="answerfjitem" class="_li data-v-0bd9e93c">
+                          <image src="{{mainIp+answerfjitem.thumb}}" alt class="_img data-v-0bd9e93c"></image>
+                        </view>
+                      </view>
+                    </view>
+                  </view>
+                  <view class="_div data-v-0bd9e93c feedbackContent" wx:if="{{answersItem.satisfaction>0&&answersItem.fdid&&answersItem.fdid!=''}}">
+                    <view wx:if="{{(answersItem.secondState==0&&!answersItem.secondContent)||(!answersItem.secondState&&!answersItem.secondContent)||answersItem.secondState==1||answersItem.secondState==2}}" class="_div data-v-0bd9e93c"><label class="_span data-v-0bd9e93c itemTil">满意度：</label> <label class="_span data-v-0bd9e93c myd" wx:if="{{answersItem.satisfaction==3}}">满意</label> <label class="_span data-v-0bd9e93c myd" wx:if="{{answersItem.satisfaction==7}}">比较满意</label> <label class="_span data-v-0bd9e93c myd" wx:if="{{answersItem.satisfaction==9}}">不满意</label>
+                      <view class="_br data-v-0bd9e93c"></view>
+                    </view>
+                  </view>
+                  <view wx:if="{{answersItem.satisfaction>0}}" class="_div data-v-0bd9e93c">
+                    <view class="_div data-v-0bd9e93c answerContent" wx:if="{{answersItem.secondContent}}">
+                      <view class="_div data-v-0bd9e93c"><label class="_span data-v-0bd9e93c itemTil">二次回复时间：</label> <label class="_span data-v-0bd9e93c">{{newtime}}</label></view>
+                      <view class="_div data-v-0bd9e93c"><label class="_span data-v-0bd9e93c itemTil">官方二次回复:</label>
+                        <rich-text class="_div data-v-0bd9e93c brnbsp" nodes="{{answersItem.secondContent}}">{{answersItem.secondContent}}</rich-text>
+                      </view>
+                    </view>
+                    <view wx:if="{{answersItem.secondAttachementsList&&answersItem.secondAttachementsList.length>0}}" class="_div data-v-0bd9e93c">
+                      <view class="_div data-v-0bd9e93c titledesc fjtitlebox">回复附件：</view>
+                      <view class="_div data-v-0bd9e93c fj">
+                        <view class="_ul data-v-0bd9e93c">
+                          <view wx:if="{{answerfjitem.isimage==1}}" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'2_'+index3+'-'+index6+'-'+index}}" data-comkey="{{$k}}" wx:for="{{answersItem.secondAttachementsList}}" wx:for-index="index" wx:for-item="answerfjitem" class="_li data-v-0bd9e93c">
+                            <image src="{{mainIp+answerfjitem.thumb}}" alt class="_img data-v-0bd9e93c"></image>
+                          </view>
+                        </view>
+                      </view>
+                    </view>
+                    <view class="_div data-v-0bd9e93c feedbackContent" wx:if="{{answersItem.secondContent&&answersItem.handleState==4&&answersItem.fdid&&answersItem.fdid!=''}}"><label class="_span data-v-0bd9e93c itemTil">满意度：</label> <label class="_span data-v-0bd9e93c myd" wx:if="{{answersItem.satisfaction==3}}">满意</label> <label class="_span data-v-0bd9e93c myd" wx:if="{{answersItem.satisfaction==7}}">比较满意</label> <label class="_span data-v-0bd9e93c myd" wx:if="{{answersItem.satisfaction==9}}">不满意</label>
+                      <view class="_br data-v-0bd9e93c"></view>
+                    </view>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <van-popup show="{{bigshow}}" bindclose="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}" class="_van-popup data-v-0bd9e93c">
+      <view class="_div data-v-0bd9e93c bigImg">
+        <image src="{{currentImg}}" alt class="_img data-v-0bd9e93c"></image>
+      </view>
+    </van-popup>
+  </view>
+</template>

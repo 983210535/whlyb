@@ -1,0 +1,27 @@
+<template name="1bc85a3e">
+  <view class="_div data-v-767a660c main">
+    <view class="_div data-v-767a660c bg">
+      <image src="/static/images/leave_bg.jpg" alt class="_img data-v-767a660c"></image>
+    </view>
+    <view class="_div data-v-767a660c top">请选择留言种类</view>
+    <view class="_div data-v-767a660c leaveBox">
+      <view class="_div data-v-767a660c inputBox">
+        <van-cell-group class="_van-cell-group data-v-767a660c">
+          <van-field value="{{lylx}}" required clearable label="留言类型" readonly placeholder="请选择" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_van-field data-v-767a660c"></van-field>
+          <van-field value="{{lyly}}" label="留言领域" readonly placeholder="请选择" bindtap="handleProxy" required data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_van-field data-v-767a660c"></van-field>
+          <van-field value="{{lywzText}}" label="留言位置" readonly placeholder="请选择" bindtap="handleProxy" required data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_van-field data-v-767a660c"></van-field>
+        </van-cell-group> <button bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}" class="_button data-v-767a660c">下一步</button>
+      </view>
+    </view>
+    <van-popup show="{{lylxshow}}" position="bottom" overlay="true" bind:close="onClose" class="_van-popup data-v-767a660c">
+      <van-picker show-toolbar title="留言类型" default-index="{{0}}" columns="{{lylxcolumns}}" bindcancel="handleProxy" bindconfirm="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}" class="_van-picker data-v-767a660c"></van-picker>
+    </van-popup>
+    <van-popup show="{{lylyshow}}" position="bottom" overlay="true" bind:close="onClose" class="_van-popup data-v-767a660c">
+      <van-picker show-toolbar title="留言领域" default-index="{{0}}" columns="{{lylycolumns}}" bindcancel="handleProxy" bindconfirm="handleProxy" data-eventid="{{'5'}}" data-comkey="{{$k}}" class="_van-picker data-v-767a660c"></van-picker>
+    </van-popup>
+    <van-popup show="{{zzshow}}" position="bottom" overlay="true" bind:close="onClose" class="_van-popup data-v-767a660c">
+      <van-picker show-toolbar title="留言位置" columns="{{columns}}" bindchange="handleProxy" bindcancel="handleProxy" bindconfirm="handleProxy" data-eventid="{{'6'}}" data-comkey="{{$k}}" class="_van-picker data-v-767a660c"></van-picker>
+    </van-popup>
+    <van-notify id="custom-selector" class="_van-notify data-v-767a660c"></van-notify>
+  </view>
+</template>

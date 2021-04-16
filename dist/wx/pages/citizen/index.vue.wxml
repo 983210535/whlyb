@@ -1,0 +1,30 @@
+<template name="c5e41d9a">
+  <view class="_div data-v-f5d3e33c main">
+    <view class="_div data-v-f5d3e33c content">
+      <view wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}" wx:for="{{dataArr}}" wx:for-index="index" wx:for-item="item" class="_div data-v-f5d3e33c">
+        <block wx:if="{{index == 0}}">
+          <view class="_div data-v-f5d3e33c first">
+            <image wx:if="{{item.PICATTACH.length > 0 &&item.PICATTACH[0].ABSURL}}" src="{{item.PICATTACH[0].ABSURL}}" alt class="_img data-v-f5d3e33c"></image>
+            <image wx:else src="/static/images_pro/noPic.png" alt class="_img data-v-f5d3e33c"></image>
+            <view class="_div data-v-f5d3e33c mainNr">
+              <view class="_p data-v-f5d3e33c titleBig source">{{ item.DOCTITLE }}</view>
+              <view class="_p data-v-f5d3e33c abstract">{{ item.DOCABSTRACT }}</view>
+            </view>
+            <view class="_div data-v-f5d3e33c nameTime"><label class="_span data-v-f5d3e33c">{{ item.SOURCENAME }} <label class="_span data-v-f5d3e33c time"> {{ item.DOCRELTIME }}</label></label></view>
+          </view>
+        </block>
+        <block wx:elif="{{item.PICATTACH.length<3}}">
+          <view class="_div data-v-f5d3e33c second">
+            <image wx:if="{{item.PICATTACH.length > 0 &&item.PICATTACH[0].ABSURL}}" src="{{item.PICATTACH[0].ABSURL}}" alt class="_img data-v-f5d3e33c"></image>
+            <image wx:else src="/static/images_pro/noPics.png" alt class="_img data-v-f5d3e33c"></image>
+            <view class="_div data-v-f5d3e33c mainSec">
+              <view class="_p data-v-f5d3e33c title">{{ item.DOCTITLE }}</view>
+              <view class="_div data-v-f5d3e33c nameTimeSec"><label class="_span data-v-f5d3e33c source">{{ item.SOURCENAME }} <label class="_span data-v-f5d3e33c time"> {{ item.DOCRELTIME }}</label></label></view>
+            </view>
+          </view>
+        </block>
+        <block wx:else></block>
+      </view>
+    </view>
+  </view>
+</template>

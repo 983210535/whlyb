@@ -1,0 +1,18 @@
+<import src="/modules/mpvue-wxparse/src/wxParse.vue.wxml" /><template name="0e5b0833">
+  <view class="_div data-v-5a932a44 main">
+    <view class="_div data-v-5a932a44 box">
+      <view class="_div data-v-5a932a44 title">
+        {{ data.DOCTITLE }}
+      </view>
+      <view class="_div data-v-5a932a44 author">
+        <view class="_p data-v-5a932a44">
+          {{ data.SOURCENAME }}
+          <label class="_span data-v-5a932a44 time">{{ data.DOCRELTIME }}</label></view>
+        <view class="_div data-v-5a932a44 share"><button open-type="share" class="_button data-v-5a932a44 zf"></button>
+          <image src="/static/images_pro/zf.png" class="_img data-v-5a932a44 fx"></image>
+        </view>
+      </view>
+      <view class="_div data-v-5a932a44 content"><template wx:if="{{data.DOCHTMLCON}}" data="{{...$root[$kk+'0'], $root}}" is="5789fdbf"></template></view>
+    </view>
+  </view>
+</template>

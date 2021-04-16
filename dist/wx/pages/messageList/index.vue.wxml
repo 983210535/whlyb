@@ -1,0 +1,32 @@
+<import src="/components/msgList/index.vue.wxml" /><template name="450c6850">
+  <view class="_div data-v-4767e47f main">
+    <van-tabs value="{{active}}" bindchange="handleProxy" animated data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_van-tabs data-v-4767e47f">
+      <van-tab title="全部" class="_van-tab data-v-4767e47f">
+        <block wx:if="{{arr.length >0 && handleState == ''}}"><template data="{{...$root[$kk+'0'], $root}}" is="84373fdc"></template></block>
+        <block wx:else>
+          <view class="_div data-v-4767e47f">
+            <image src="/static/images_pro/null.png" alt class="_img data-v-4767e47f"></image>
+          </view>
+        </block>
+      </van-tab>
+      <van-tab title="办理中" class="_van-tab data-v-4767e47f">
+        <block wx:if="{{arr.length >0 && handleState == 2}}"><template data="{{...$root[$kk+'4'], $root}}" is="84373fdc"></template></block>
+        <block wx:else>
+          <view class="_div data-v-4767e47f">
+            <image src="/static/images_pro/null.png" alt class="_img data-v-4767e47f"></image>
+          </view>
+        </block>
+      </van-tab>
+      <van-tab title="已回复" class="_van-tab data-v-4767e47f">
+        <block wx:if="{{arr.length >0  && handleState == 3}}"><template data="{{...$root[$kk+'8'], $root}}" is="84373fdc"></template></block>
+        <block wx:else>
+          <view class="_div data-v-4767e47f">
+            <image src="/static/images_pro/null.png" alt class="_img data-v-4767e47f"></image>
+          </view>
+        </block>
+      </van-tab>
+    </van-tabs>
+    <view class="_div data-v-4767e47f nodata" wx:if="{{nodatashow}}">没有更多数据了</view>
+    <view class="_div data-v-4767e47f nodata" wx:if="{{loadding}}">正在加载请稍后</view>
+  </view>
+</template>

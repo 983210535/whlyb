@@ -1,0 +1,20 @@
+<template name="41032cb2">
+  <view class="_div data-v-4ac83ddd main">
+    <view class="_div data-v-4ac83ddd topImg">
+      <image src="/static/images/mine_top.png" alt class="_img data-v-4ac83ddd"></image>
+    </view>
+    <scroll-view scroll-y style="height: 100%;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" class="_scroll-view data-v-4ac83ddd">
+      <view class="_div data-v-4ac83ddd xqbox">
+        <van-collapse value="{{activeNames}}" bindchange="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_van-collapse data-v-4ac83ddd">
+          <van-collapse-item title="我如何登录留言板？" name="1" class="_van-collapse-item data-v-4ac83ddd"> 点击页面左上方“点我留言”按钮，确认“微信授权登录”，允许微信绑定手机号码，即可完成登录。 </van-collapse-item>
+          <van-collapse-item title="如何发表您的留言？" name="2" class="_van-collapse-item data-v-4ac83ddd"> 填写留言标题，正文等相关信息，点击“提交留言”即可。 </van-collapse-item>
+          <van-collapse-item title="如何删除自己的留言？" name="3" class="_van-collapse-item data-v-4ac83ddd"> 如留言尚未回复，留言用户可联系留言板客服QQ：2410431154，提交所需的证明后给予撤诉。 </van-collapse-item>
+          <van-collapse-item title="我如何对官方给我的回复发表评价" name="4" class="_van-collapse-item data-v-4ac83ddd"> 留言办理单位对留言做出回复后，留言用户登录后可以点击留言正文后“点击评价”按钮，并选择满意度。确认无误后，点击“提交”即可。 </van-collapse-item>
+          <van-collapse-item title="为什么我的留言没有显示" name="5" class="_van-collapse-item data-v-4ac83ddd"> 根据《武汉城市留言板管理条例》，对适当的留言选择公开。注册用户可登录后通过“我的留言”查看留言处理进展。 </van-collapse-item>
+          <van-collapse-item title="如何使用查询" name="6" class="_van-collapse-item data-v-4ac83ddd"> 在首页搜索框，输入查询的关键字，就可以检索到留言板中的相关留言。 </van-collapse-item>
+          <van-collapse-item title="我如何编辑自己的留言" name="7" class="_van-collapse-item data-v-4ac83ddd"> 《武汉城市留言板》目前未开通用户对留言内容进行二次编辑功能。留言用户如需补充或修改留言要素，可在留言未回复前，联系留言板客服QQ：2410431154申请修改。 </van-collapse-item>
+        </van-collapse>
+      </view>
+    </scroll-view>
+  </view>
+</template>

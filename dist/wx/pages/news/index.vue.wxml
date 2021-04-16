@@ -1,0 +1,14 @@
+<template name="33e4cb84">
+  <view class="_div data-v-3da9dcaf main">
+    <view class="_div data-v-3da9dcaf newitem">
+      <view class="_div data-v-3da9dcaf left">
+        <image src="/static/images/usericon.jpeg" alt class="_img data-v-3da9dcaf"></image>
+      </view>
+      <view class="_div data-v-3da9dcaf right">
+        <view class="_div data-v-3da9dcaf title1"><label class="_span data-v-3da9dcaf title">{{newcontent.title}}</label></view>
+        <view class="_div data-v-3da9dcaf time">{{newcontent.createTime}}</view>
+        <view class="_div data-v-3da9dcaf content">{{newcontent.content}}</view>
+      </view>
+    </view>
+  </view>
+</template>

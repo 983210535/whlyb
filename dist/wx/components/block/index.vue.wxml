@@ -1,0 +1,27 @@
+<import src="/modules/mpvue-wxparse/src/wxParse.vue.wxml" /><template name="6d8d16c0">
+  <view class="_div data-v-1dd3fec5">
+    <view class="_div data-v-1dd3fec5 searchitem" wx:if="{{!blockData||blockData.length<1}}"><label class="_span data-v-1dd3fec5 nodata">暂无数据</label></view>
+    <view wx:else class="_div data-v-1dd3fec5">
+      <view class="_div data-v-1dd3fec5 blockview">
+        <view class="_div data-v-1dd3fec5 cradBox" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}" wx:for="{{blockData}}" wx:for-index="index" wx:for-item="item">
+          <view class="_div data-v-1dd3fec5 itemicon" wx:if="{{item.userHead}}">
+            <image src="{{domain.usericon+item.userHead}}" alt class="_img data-v-1dd3fec5"></image>
+          </view>
+          <view class="_div data-v-1dd3fec5 itemicon" wx:else>
+            <image src="{{domain.defaltUsericon}}" alt class="_img data-v-1dd3fec5"></image>
+          </view>
+          <view class="_div data-v-1dd3fec5 top"><label class="_span data-v-1dd3fec5 title"><template data="{{...$root[$kk+'0_'+index], $root}}" is="5789fdbf"></template></label> <label class="_span data-v-1dd3fec5 blzt" wx:if="{{item.handleState==1||item.handleState==2}}">已回复</label><label class="_span data-v-1dd3fec5 blzt" wx:else>办理中</label></view>
+          <view class="_div data-v-1dd3fec5 desc"><label class="_span data-v-1dd3fec5">
+              <van-icon class="_van-icon data-v-1dd3fec5 iconimg" name="clock-o"></van-icon>
+              {{item.dateline_txt}}
+            </label> <label class="_span data-v-1dd3fec5">
+              <van-icon class="_van-icon data-v-1dd3fec5 iconimg" name="user-circle-o"></van-icon> <label wx:if="{{item.anonymousState==1}}" class="_span data-v-1dd3fec5"></label><label wx:else class="_span data-v-1dd3fec5">{{item.nickName}}</label>
+            </label> <label class="_span data-v-1dd3fec5">
+              <van-icon class="_van-icon data-v-1dd3fec5 iconimg" name="question-o"></van-icon>
+              {{item.typeId_txt+'　'+item.domainId_txt}}
+            </label></view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

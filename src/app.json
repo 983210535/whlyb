@@ -1,0 +1,113 @@
+{
+    "usingComponents": {
+        "i-card": "./static/vant/dist/card/index",
+        "van-field": "./static/vant/dist/field/index",
+        "van-search": "./static/vant/dist/search/index",
+        "van-tab": "./static/vant/dist/tab/index",
+        "van-tabs": "./static/vant/dist/tabs/index",
+        "van-panel": "./static/vant/dist/panel/index",
+        "van-icon": "./static/vant/dist/icon/index",
+        "van-popup": "./static/vant/dist/popup/index",
+        "van-picker": "./static/vant/dist/picker/index",
+        "van-row": "./static/vant/dist/row/index",
+        "van-col": "./static/vant/dist/col/index",
+        "van-cell": "./static/vant/dist/cell/index",
+        "van-cell-group": "./static/vant/dist/cell-group/index",
+        "van-collapse": "./static/vant/dist/collapse/index",
+        "van-collapse-item": "./static/vant/dist/collapse-item/index",
+        "van-notify": "./static/vant/dist/notify/index",
+        "van-dialog": "./static/vant/dist/dialog/index",
+        "van-checkbox": "./static/vant/dist/checkbox/index",
+        "van-checkbox-group": "./static/vant/dist/checkbox-group/index",
+        "van-radio": "./static/vant/dist/radio/index",
+        "van-radio-group": "./static/vant/dist/radio-group/index",
+        "van-toast": "./static/vant/dist/toast/index",
+        "van-button": "./static/vant/dist/button/index"
+    },
+    "pages": [
+        "pages/view/main",
+        "pages/map/main",
+        "pages/search/main",
+        "pages/focus/main",
+        "pages/massDetails/main",
+        "pages/idea/main",
+        "pages/citizen/main",
+        "pages/people/main",
+        "pages/newDetails/main",
+        "pages/lyDetails/main",
+        "pages/hot/main",
+        "pages/hot2/main",
+        "pages/message/main",
+        "pages/messageList/main",
+        "pages/bang/main",
+        "pages/index/main",
+        "pages/leavemessage/main",
+        "pages/mine/main",
+        "pages/lyxq/main",
+        "pages/leavetab/main",
+        "pages/lyzn/main",
+        "pages/aboutus/main",
+        "pages/register/main",
+        "pages/userregister/main",
+        "pages/myleavemessage/main",
+        "pages/ybj/main",
+        "pages/wdxx/main",
+        "pages/news/main",
+        "pages/wdlyxq/main"
+    ],
+    "subPackages": [{
+            "root": "pages/sub/",
+            "pages": [
+                "treaty/main"
+            ]
+        }
+    ],
+    "permission": {
+        "scope.userLocation": {
+            "desc": "你的位置信息将用于小程序位置接口的效果展示" 
+        }
+    },
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "武汉城市留言板",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "color": "#828282",
+        "backgroundColor": "#FFFFFF",
+        "selectedColor": "#F54645",
+        "borderStyle": "white",
+        "list": [{
+                "pagePath": "pages/view/main",
+                "text": "首页",
+                "iconPath": "./static/images_pro/icon_home.png",
+                "selectedIconPath": "./static/images_pro/icon_home_s.png"
+            },
+            {
+                "pagePath": "pages/hot2/main",
+                "text": "榜单",
+                "iconPath": "./static/images_pro/phb.png",
+                "selectedIconPath": "./static/images_pro/phb_s.png"
+            },
+            {
+                "pagePath": "pages/idea/main",
+                "text": "金点子",
+                "iconPath": "./static/images_pro/icon_ideal.png",
+                "selectedIconPath": "./static/images_pro/icon_ideal_s.png"
+            },
+            {
+                "pagePath": "pages/citizen/main",
+                "text": "好网民",
+                "iconPath": "./static/images_pro/icon_good.png",
+                "selectedIconPath": "./static/images_pro/icon_good_s.png"
+            },
+            {
+                "pagePath": "pages/mine/main",
+                "text": "我的",
+                "iconPath": "./static/images_pro/icon_my.png",
+                "selectedIconPath": "./static/images_pro/icon_my_s.png"
+            }
+        ]
+    }
+}

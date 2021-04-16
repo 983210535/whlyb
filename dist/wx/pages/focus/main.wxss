@@ -1,0 +1,14 @@
+@import "../../common/vendor.wxss";
+
+.main.data-v-168f70dc {
+  width: 100%;
+}
+._img.data-v-168f70dc {
+  width: 670rpx;
+  height: 874rpx;
+  margin: 140rpx 40rpx;
+}
+.nodata.data-v-168f70dc {
+  text-align: center;
+  margin-top: 16rpx;
+}

@@ -1,0 +1,11 @@
+<template name="088492a6">
+  <view class="_div data-v-4431de6a main">
+    <view wx:key="index" key="{{index}}" bindtap="handleProxy" class="_div data-v-4431de6a msg {{[  (index < 3 ? true : '') ? 'bangHei' : '',  (index == 0 ? true : '') ? 'bangFir' : '']}}" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}" wx:for="{{arr}}" wx:for-index="index" wx:for-item="item">
+      <view class="_p data-v-4431de6a title_s">
+        <rich-text class="_span data-v-4431de6a title" nodes="{{ item.subject}}"></rich-text>
+      </view>
+      <rich-text class="_p data-v-4431de6a content" nodes="{{ item.content}}"></rich-text>
+      <view class="_p data-v-4431de6a btm"><label class="_span data-v-4431de6a">{{item.nickName}}</label> <label class="_span data-v-4431de6a">{{ item.dateline }}</label></view>
+    </view>
+  </view>
+</template>

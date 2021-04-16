@@ -1,0 +1,9 @@
+<template name="7904cb80">
+  <view class="_div data-v-e1c925aa main">
+    <view class="_div data-v-e1c925aa container" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}" wx:for="{{dataArr}}" wx:for-index="index" wx:for-item="item">
+      <rich-text class="_p data-v-e1c925aa title" nodes="{{item.subject}}"></rich-text>
+      <rich-text class="_div data-v-e1c925aa content" nodes="{{item.content}}"></rich-text>
+      <view class="_p data-v-e1c925aa time"><label class="_span data-v-e1c925aa">{{ item.nickName }}</label> <label class="_span data-v-e1c925aa">{{ item.dateline }}</label></view>
+    </view>
+  </view>
+</template>

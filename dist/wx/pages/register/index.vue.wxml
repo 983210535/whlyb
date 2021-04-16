@@ -1,0 +1,10 @@
+<template name="d4e67c58">
+  <view class="_div data-v-2c5a5802 main">
+    <view class="_div data-v-2c5a5802 topImg">
+      <image src="/static/images_pro/welcome.png" alt class="_img data-v-2c5a5802"></image>
+    </view>
+    <view class="_div data-v-2c5a5802 btoBtn"><button class="_button data-v-2c5a5802 sqBtn" open-type="getPhoneNumber" bindgetphonenumber="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+        <image src="/static/images_pro/wechat.png" alt class="_img data-v-2c5a5802"></image>微信授权登录
+      </button></view>
+  </view>
+</template>

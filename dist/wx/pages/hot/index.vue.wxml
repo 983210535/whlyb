@@ -1,0 +1,38 @@
+<template name="2bee1658">
+  <view class="_div data-v-431b5487 main">
+    <view class="_div data-v-431b5487 content">
+      <view wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}" wx:for="{{dataArr}}" wx:for-index="index" wx:for-item="item" class="_div data-v-431b5487">
+        <block wx:if="{{index == 0}}">
+          <view class="_div data-v-431b5487 first">
+            <image src="{{item.PICATTACH[0].ABSURL}}" alt class="_img data-v-431b5487"></image>
+            <view class="_div data-v-431b5487 mainNr">
+              <view class="_p data-v-431b5487 titleBig source">{{ item.DOCTITLE }}</view>
+              <view class="_p data-v-431b5487 abstract">{{ item.DOCABSTRACT }}</view>
+            </view>
+            <view class="_div data-v-431b5487 nameTime"><label class="_span data-v-431b5487">{{ item.SOURCENAME }} <label class="_span data-v-431b5487 time"> {{ item.DOCRELTIME }}</label></label></view>
+          </view>
+        </block>
+        <block wx:elif="{{item.PICATTACH.length<3}}">
+          <view class="_div data-v-431b5487 second">
+            <image src="{{item.PICATTACH[0].ABSURL}}" alt class="_img data-v-431b5487"></image>
+            <view class="_div data-v-431b5487 mainSec">
+              <view class="_p data-v-431b5487 title">{{ item.DOCTITLE }}</view>
+              <view class="_div data-v-431b5487 nameTimeSec"><label class="_span data-v-431b5487 source">{{ item.SOURCENAME }} <label class="_span data-v-431b5487 time"> {{ item.DOCRELTIME }}</label></label></view>
+            </view>
+          </view>
+        </block>
+        <block wx:else>
+          <view class="_div data-v-431b5487 third">
+            <image src="{{item.PICATTACH[0].ABSURL}}" alt class="_img data-v-431b5487"></image>
+            <image src="{{item.PICATTACH[1].ABSURL}}" alt class="_img data-v-431b5487"></image>
+            <image src="{{item.PICATTACH[2].ABSURL}}" alt class="_img data-v-431b5487"></image>
+            <view class="_div data-v-431b5487 mainSec">
+              <view class="_p data-v-431b5487 title">{{ item.DOCTITLE }}</view>
+              <view class="_div data-v-431b5487 nameTimeSec"><label class="_span data-v-431b5487 source">{{ item.SOURCENAME }} <label class="_span data-v-431b5487 time"> {{ item.DOCRELTIME }}</label></label></view>
+            </view>
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+</template>

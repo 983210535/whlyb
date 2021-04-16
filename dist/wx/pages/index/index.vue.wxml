@@ -1,0 +1,11 @@
+<template name="12254d5d">
+  <view class="_div data-v-7c4ceb0c main">
+    <view class="_div data-v-7c4ceb0c login">
+      <image src="/static/images/main_bg_b.png" alt class="_img data-v-7c4ceb0c"></image>
+    </view>
+    <view class="_div data-v-7c4ceb0c bottom"><button open-type="getUserInfo" bindgetuserinfo="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_button data-v-7c4ceb0c">我要留言</button>
+      <view class="_p data-v-7c4ceb0c desc">一块帮老百姓办事的留言板</view>
+    </view>
+    <van-notify id="custom-selector" class="_van-notify data-v-7c4ceb0c"></van-notify>
+  </view>
+</template>

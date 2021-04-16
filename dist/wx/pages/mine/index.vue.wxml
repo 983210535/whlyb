@@ -1,0 +1,48 @@
+<template name="bb5af5f8">
+  <view class="_div data-v-a7d0d3a2 main">
+    <view class="_div data-v-a7d0d3a2 user" wx:if="{{token}}">
+      <image bindtap="handleProxy" src="{{user.avatarUrl}}" alt data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_img data-v-a7d0d3a2"></image><label class="_span data-v-a7d0d3a2">{{user.nickName}}</label>
+    </view>
+    <view class="_div data-v-a7d0d3a2 user" wx:else>
+      <image bindtap="handleProxy" src="/static/images_pro/not_login.png" alt data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_img data-v-a7d0d3a2"></image>
+      <view class="_div data-v-a7d0d3a2 login"><button open-type="getUserInfo" bindgetuserinfo="handleProxy" class="_button data-v-a7d0d3a2 login" data-eventid="{{'2'}}" data-comkey="{{$k}}">点击登录/注册</button></view>
+    </view>
+    <view class="_div data-v-a7d0d3a2 choose">
+      <view bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}" class="_div data-v-a7d0d3a2">
+        <image src="/static/images_pro/my_lmsg.png" alt class="_img data-v-a7d0d3a2"></image> 我的留言
+      </view>
+      <view bindtap="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}" class="_div data-v-a7d0d3a2">
+        <image src="/static/images_pro/my_focus.png" alt class="_img data-v-a7d0d3a2"></image> 我的关注
+      </view>
+      <view bindtap="handleProxy" data-eventid="{{'5'}}" data-comkey="{{$k}}" class="_div data-v-a7d0d3a2">
+        <image src="/static/images_pro/my_msg.png" alt class="_img data-v-a7d0d3a2"></image> 我的消息
+      </view>
+    </view>
+    <view class="_div data-v-a7d0d3a2 btm">
+      <view class="_div data-v-a7d0d3a2 list" bindtap="handleProxy" data-eventid="{{'6'}}" data-comkey="{{$k}}"><button open-type="share" class="_button data-v-a7d0d3a2 share">
+          <view class="_div data-v-a7d0d3a2 cell">
+            <image class="_img data-v-a7d0d3a2 icon" src="/static/images_pro/my_zf.png" alt></image> 分享小程序
+          </view>
+          <image src="/static/images_pro/right.png" alt class="_img data-v-a7d0d3a2"></image>
+        </button></view>
+      <view class="_div data-v-a7d0d3a2 list" bindtap="handleProxy" data-eventid="{{'7'}}" data-comkey="{{$k}}">
+        <view class="_div data-v-a7d0d3a2 cell">
+          <image class="_img data-v-a7d0d3a2 icon" src="/static/images_pro/my_guide.png" alt></image> 留言指南
+        </view>
+        <image src="/static/images_pro/right.png" alt class="_img data-v-a7d0d3a2"></image>
+      </view>
+      <view class="_div data-v-a7d0d3a2 list" bindtap="handleProxy" data-eventid="{{'8'}}" data-comkey="{{$k}}">
+        <view class="_div data-v-a7d0d3a2 cell">
+          <image class="_img data-v-a7d0d3a2 icon" src="/static/images_pro/my_delete.png" alt></image> 清除缓存
+        </view>
+        <image src="/static/images_pro/right.png" alt class="_img data-v-a7d0d3a2"></image>
+      </view>
+      <view class="_div data-v-a7d0d3a2 list" bindtap="handleProxy" data-eventid="{{'9'}}" data-comkey="{{$k}}">
+        <view class="_div data-v-a7d0d3a2 cell">
+          <image class="_img data-v-a7d0d3a2 icon" src="/static/images_pro/my_about.png" alt></image> 关于我们
+        </view>
+        <image src="/static/images_pro/right.png" alt class="_img data-v-a7d0d3a2"></image>
+      </view>
+    </view> <button class="_button data-v-a7d0d3a2 exit" wx:if="{{token}}" bindtap="handleProxy" data-eventid="{{'10'}}" data-comkey="{{$k}}"> 退出登录 </button>
+  </view>
+</template>

@@ -1,0 +1,19 @@
+<import src="/components/index/index.vue.wxml" /><template name="54a9ffb6">
+  <van-tabs bindchange="handleProxy" animated sticky swipe-threshold="3" color="#F54645" title-inactive-color="#F54645" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_van-tabs data-v-5e6f10e1">
+    <van-tab title="各区(功能区)" class="_van-tab data-v-5e6f10e1">
+      <block wx:if="{{type == 1}}"><template data="{{...$root[$kk+'0'], $root}}" is="615406a5"></template></block>
+    </van-tab>
+    <van-tab title="政府部门" class="_van-tab data-v-5e6f10e1">
+      <block wx:if="{{type == 4}}"><template data="{{...$root[$kk+'3'], $root}}" is="615406a5"></template></block>
+    </van-tab>
+    <van-tab title="法检及其他单位" class="_van-tab data-v-5e6f10e1">
+      <block wx:if="{{type == 5}}"><template data="{{...$root[$kk+'6'], $root}}" is="615406a5"></template></block>
+    </van-tab>
+    <van-tab title="群团" class="_van-tab data-v-5e6f10e1">
+      <block wx:if="{{type == 3}}"><template data="{{...$root[$kk+'9'], $root}}" is="615406a5"></template></block>
+    </van-tab>
+    <van-tab title="党委系统" class="_van-tab data-v-5e6f10e1">
+      <block wx:if="{{type == 2}}"><template data="{{...$root[$kk+'12'], $root}}" is="615406a5"></template></block>
+    </van-tab>
+  </van-tabs>
+</template>

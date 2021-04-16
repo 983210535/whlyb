@@ -1,0 +1,19 @@
+<template name="02f699f6">
+  <view class="_div data-v-152e69eb searchview">
+    <view wx:if="{{!searchdata||searchdata.length<1}}" class="_div data-v-152e69eb"><label class="_span data-v-152e69eb nodata">无符合条件的结果</label></view>
+    <view wx:else class="_div data-v-152e69eb">
+      <view class="_div data-v-152e69eb searchitem" wx:key="index" key="{{index}}" wx:for="{{searchdata}}" wx:for-index="index" wx:for-item="item">
+        <view class="_div data-v-152e69eb listitem" bindtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}">
+          <view class="_div data-v-152e69eb top">
+            <rich-text class="_div data-v-152e69eb title" wx:if="{{item.highlight.subject}}" nodes="{{item.highlight.subject}}"></rich-text>
+            <rich-text class="_div data-v-152e69eb title" wx:else nodes="{{item.source.subject}}"></rich-text> <label class="_span data-v-152e69eb date">{{ item.source.dateline }}</label>
+          </view>
+          <view class="_div data-v-152e69eb content">
+            <rich-text class="_div data-v-152e69eb content2" wx:if="{{item.highlight.content}}" nodes="{{item.highlight.content}}"></rich-text>
+            <rich-text class="_div data-v-152e69eb content2" wx:else nodes="{{item.source.content}}"></rich-text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

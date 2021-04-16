@@ -1,0 +1,30 @@
+<template name="4d0abab0">
+  <view class="_div data-v-3980985a main">
+    <view class="_div data-v-3980985a content">
+      <view wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}" wx:for="{{dataArr}}" wx:for-index="index" wx:for-item="item" class="_div data-v-3980985a">
+        <block wx:if="{{index == 0}}">
+          <view class="_div data-v-3980985a first">
+            <image wx:if="{{item.PICATTACH.length > 0 &&item.PICATTACH[0].ABSURL}}" src="{{item.PICATTACH[0].ABSURL}}" alt class="_img data-v-3980985a"></image>
+            <image wx:else src="/static/images_pro/noPic.png" alt class="_img data-v-3980985a"></image>
+            <view class="_div data-v-3980985a mainNr">
+              <view class="_p data-v-3980985a titleBig source">{{ item.DOCTITLE }}</view>
+              <view class="_p data-v-3980985a abstract">{{ item.DOCABSTRACT }}</view>
+            </view>
+            <view class="_div data-v-3980985a nameTime"><label class="_span data-v-3980985a source">{{ item.SOURCENAME }} <label class="_span data-v-3980985a time"> {{ item.DOCRELTIME }}</label></label></view>
+          </view>
+        </block>
+        <block wx:elif="{{item.PICATTACH.length<3}}">
+          <view class="_div data-v-3980985a second">
+            <image wx:if="{{item.PICATTACH.length > 0 &&item.PICATTACH[0].ABSURL}}" src="{{item.PICATTACH[0].ABSURL}}" alt class="_img data-v-3980985a"></image>
+            <image wx:else src="/static/images_pro/noPics.png" alt class="_img data-v-3980985a"></image>
+            <view class="_div data-v-3980985a mainSec">
+              <view class="_p data-v-3980985a title">{{ item.DOCTITLE }}</view>
+              <view class="_div data-v-3980985a nameTimeSec"><label class="_span data-v-3980985a source">{{ item.SOURCENAME }} <label class="_span data-v-3980985a time"> {{ item.DOCRELTIME }}</label></label></view>
+            </view>
+          </view>
+        </block>
+        <block wx:else></block>
+      </view>
+    </view>
+  </view>
+</template>

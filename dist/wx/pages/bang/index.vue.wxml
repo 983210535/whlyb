@@ -1,0 +1,114 @@
+<template name="b907e6ae">
+  <view class="_div data-v-a57dc458 main">
+    <van-tabs value="{{active}}" bindchange="handleProxy" animated data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_van-tabs data-v-a57dc458">
+      <van-tab title="留言排行" class="_van-tab data-v-a57dc458">
+        <view wx:key="index" key="{{index}}" class="_div data-v-a57dc458 bang {{[  (index < 3 ? true : '') ? 'bangHei' : '',  (index == 0 ? true : '') ? 'bangFir' : '']}}" wx:for="{{lylarr}}" wx:for-index="index" wx:for-item="item">
+          <block wx:if="{{index == 0}}">
+            <view class="_p data-v-a57dc458 rank">
+              <image src="/static/images_pro/first.png" alt class="_img data-v-a57dc458"></image>
+              {{item.name}}
+            </view> <label class="_span data-v-a57dc458">{{item.message_num}}</label>
+          </block>
+          <block wx:elif="{{index == 1}}">
+            <view class="_p data-v-a57dc458 rank">
+              <image src="/static/images_pro/second.png" alt class="_img data-v-a57dc458"></image>
+              {{item.name}}
+            </view> <label class="_span data-v-a57dc458">{{item.message_num}}</label>
+          </block>
+          <block wx:elif="{{index == 2}}">
+            <view class="_p data-v-a57dc458 rank">
+              <image src="/static/images_pro/third.png" alt class="_img data-v-a57dc458"></image>
+              {{item.name}}
+            </view> <label class="_span data-v-a57dc458">{{item.message_num}}</label>
+          </block>
+          <block wx:else>
+            <view class="_p data-v-a57dc458 rank_t"><label class="_span data-v-a57dc458">{{index + 1}}</label>
+              {{item.name}}
+            </view> <label class="_span data-v-a57dc458">{{item.message_num}}</label>
+          </block>
+        </view>
+      </van-tab>
+      <van-tab title="回复排行" class="_van-tab data-v-a57dc458">
+        <view wx:key="index" key="{{index}}" class="_div data-v-a57dc458 bang {{[  (index < 3 ? true : '') ? 'bangHei' : '',  (index == 0 ? true : '') ? 'bangFir' : '']}}" wx:for="{{hflarr}}" wx:for-index="index" wx:for-item="item">
+          <block wx:if="{{index == 0}}">
+            <view class="_p data-v-a57dc458 rank">
+              <image src="/static/images_pro/first.png" alt class="_img data-v-a57dc458"></image>
+              {{item.name}}
+            </view> <label class="_span data-v-a57dc458">{{item.answers_num}}</label>
+          </block>
+          <block wx:elif="{{index == 1}}">
+            <view class="_p data-v-a57dc458 rank">
+              <image src="/static/images_pro/second.png" alt class="_img data-v-a57dc458"></image>
+              {{item.name}}
+            </view> <label class="_span data-v-a57dc458">{{item.answers_num}}</label>
+          </block>
+          <block wx:elif="{{index == 2}}">
+            <view class="_p data-v-a57dc458 rank">
+              <image src="/static/images_pro/third.png" alt class="_img data-v-a57dc458"></image>
+              {{item.name}}
+            </view> <label class="_span data-v-a57dc458">{{item.answers_num}}</label>
+          </block>
+          <block wx:else>
+            <view class="_p data-v-a57dc458 rank_t"><label class="_span data-v-a57dc458">{{index + 1}}</label>
+              {{item.name}}
+            </view> <label class="_span data-v-a57dc458">{{item.answers_num}}</label>
+          </block>
+        </view>
+      </van-tab>
+      <van-tab title="回复率排行" class="_van-tab data-v-a57dc458">
+        <view wx:key="index" key="{{index}}" class="_div data-v-a57dc458 bang {{[  (index < 3 ? true : '') ? 'bangHei' : '',  (index == 0 ? true : '') ? 'bangFir' : '']}}" wx:for="{{hflvarr}}" wx:for-index="index" wx:for-item="item">
+          <block wx:if="{{index == 0}}">
+            <view class="_p data-v-a57dc458 rank">
+              <image src="/static/images_pro/first.png" alt class="_img data-v-a57dc458"></image>
+              {{item.name}}
+            </view> <label class="_span data-v-a57dc458">{{ item.rates  }}</label>
+          </block>
+          <block wx:elif="{{index == 1}}">
+            <view class="_p data-v-a57dc458 rank">
+              <image src="/static/images_pro/second.png" alt class="_img data-v-a57dc458"></image>
+              {{item.name}}
+            </view> <label class="_span data-v-a57dc458">{{item.rates }}</label>
+          </block>
+          <block wx:elif="{{index == 2}}">
+            <view class="_p data-v-a57dc458 rank">
+              <image src="/static/images_pro/third.png" alt class="_img data-v-a57dc458"></image>
+              {{item.name}}
+            </view> <label class="_span data-v-a57dc458">{{item.rates }}</label>
+          </block>
+          <block wx:else>
+            <view class="_p data-v-a57dc458 rank_t"><label class="_span data-v-a57dc458">{{index + 1}}</label>
+              {{item.name}}
+            </view> <label class="_span data-v-a57dc458">{{item.rates }}</label>
+          </block>
+        </view>
+      </van-tab>
+      <van-tab title="满意度排行" class="_van-tab data-v-a57dc458">
+        <view wx:key="index" key="{{index}}" class="_div data-v-a57dc458 bang {{[  (index < 3 ? true : '') ? 'bangHei' : '',  (index == 0 ? true : '') ? 'bangFir' : '']}}" wx:for="{{mylvarr}}" wx:for-index="index" wx:for-item="item">
+          <block wx:if="{{index == 0}}">
+            <view class="_p data-v-a57dc458 rank">
+              <image src="/static/images_pro/first.png" alt class="_img data-v-a57dc458"></image>
+              {{item.name}}
+            </view> <label class="_span data-v-a57dc458">{{ item.reates  }}</label>
+          </block>
+          <block wx:elif="{{index == 1}}">
+            <view class="_p data-v-a57dc458 rank">
+              <image src="/static/images_pro/second.png" alt class="_img data-v-a57dc458"></image>
+              {{item.name}}
+            </view> <label class="_span data-v-a57dc458">{{item.reates }}</label>
+          </block>
+          <block wx:elif="{{index == 2}}">
+            <view class="_p data-v-a57dc458 rank">
+              <image src="/static/images_pro/third.png" alt class="_img data-v-a57dc458"></image>
+              {{item.name}}
+            </view> <label class="_span data-v-a57dc458">{{item.reates }}</label>
+          </block>
+          <block wx:else>
+            <view class="_p data-v-a57dc458 rank_t"><label class="_span data-v-a57dc458">{{index + 1}}</label>
+              {{item.name}}
+            </view> <label class="_span data-v-a57dc458">{{item.reates }}</label>
+          </block>
+        </view>
+      </van-tab>
+    </van-tabs>
+  </view>
+</template>

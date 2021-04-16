@@ -1,0 +1,33 @@
+@import "../../../common/vendor.wxss";
+
+.main {
+  margin: 20rpx 20rpx 40rpx 60rpx;
+  box-shadow: 0 0 20rpx 0 #e5e5e5;
+  padding: 40rpx;
+}
+.title {
+  font-size: 32rpx;
+  font-weight: bold;
+  overflow: hidden;
+  margin-bottom: 20rpx;
+  padding-bottom: 12rpx;
+  border-bottom: 2rpx dashed #e5e5e5;
+}
+.list ._ul {
+  overflow: hidden;
+}
+.list ._ul ._li {
+  list-style: inside;
+  font-size: 28rpx;
+  float: left;
+  width: 492rpx;
+  line-height: 44rpx;
+  cursor: pointer;
+}
+.nr {
+  margin-bottom: 60rpx;
+}
+.nr ._p {
+  font-size: 28rpx;
+  line-height: 52rpx;
+}

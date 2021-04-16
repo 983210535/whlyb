@@ -1,0 +1,9 @@
+<template name="7688c5ce">
+  <view class="_div data-v-1956273e ebox">
+    <view wx:key="index" key="{{index}}" class="_div data-v-1956273e emoji" wx:for="{{list}}" wx:for-index="index" wx:for-item="item">
+      <view wx:key="index2+1" key="{{index2+1}}" wx:for="{{item}}" wx:for-index="index2" wx:for-item="imgSrc" class="_div data-v-1956273e">
+        <image src="{{imgSrc}}" alt bindtap="handleProxy" data-eventid="{{'0_'+index+'-'+index2}}" data-comkey="{{$k}}" class="_img data-v-1956273e"></image>
+      </view>
+    </view>
+  </view>
+</template>

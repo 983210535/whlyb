@@ -1,0 +1,124 @@
+@import "../../common/vendor.wxss";
+
+.main.data-v-108a4e78 {
+  width: 100%;
+}
+._img.data-v-108a4e78 {
+  width: 670rpx;
+  height: 874rpx;
+  margin: 140rpx 40rpx;
+}
+.msg.data-v-108a4e78 {
+  margin-bottom: 8rpx;
+  background: #fff;
+}
+.msg ._p.data-v-108a4e78 {
+  width: 686rpx;
+  margin: auto;
+}
+.title_s.data-v-108a4e78 {
+  display: flex;
+  justify-content: space-between;
+  padding: 30rpx 0 16rpx 0;
+}
+.title.data-v-108a4e78 {
+  display: block;
+  width: 540rpx;
+  white-space: nowrap;
+  color: #252525;
+  font-weight: bold;
+}
+.title.data-v-108a4e78,
+.content.data-v-108a4e78 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.content.data-v-108a4e78 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.content.data-v-108a4e78,
+.btm.data-v-108a4e78 {
+  color: #828282;
+  font-size: 28rpx;
+}
+.btm.data-v-108a4e78 {
+  padding: 32rpx 0;
+  display: flex;
+  justify-content: space-between;
+}
+.system.data-v-108a4e78 {
+  border-top: 2rpx solid #f2f2f2;
+  margin: 0 32rpx;
+  padding: 32rpx 0;
+}
+.system ._span.data-v-108a4e78 {
+  color: #F54645;
+}
+.nodata.data-v-108a4e78 {
+  text-align: center;
+  margin-top: 16rpx;
+}
+.xthf.data-v-108a4e78 {
+  background: #F2F2F2;
+  padding-bottom: 8rpx;
+}
+.main.data-v-4431de6a {
+  width: 100%;
+  height: 100%;
+  background: #F2F2F2;
+}
+.msg.data-v-4431de6a {
+  background: #fff;
+  margin-bottom: 8rpx;
+}
+.msg ._p.data-v-4431de6a {
+  width: 686rpx;
+  margin: auto;
+}
+.title_s.data-v-4431de6a {
+  display: flex;
+  justify-content: space-between;
+  padding: 30rpx 0 16rpx 0;
+}
+.title.data-v-4431de6a {
+  display: block;
+  max-width: 540rpx;
+  color: #252525;
+  font-weight: bold;
+  font-size: 32rpx;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+.title.data-v-4431de6a,
+.content.data-v-4431de6a {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.content.data-v-4431de6a {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.content.data-v-4431de6a,
+.btm.data-v-4431de6a {
+  color: #828282;
+  font-size: 28rpx;
+}
+.btm.data-v-4431de6a {
+  padding: 32rpx 0;
+  display: flex;
+  justify-content: space-between;
+}
+.handle.data-v-4431de6a {
+  font-size: 28rpx;
+  color: #F54645;
+}
+.handles.data-v-4431de6a {
+  color: #597BEB;
+}

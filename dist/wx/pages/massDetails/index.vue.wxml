@@ -1,0 +1,16 @@
+<template name="7f208f0e">
+  <view class="_div data-v-7a6996b0 main">
+    <view class="_div data-v-7a6996b0 box">
+      <rich-text class="_div data-v-7a6996b0 title" nodes="{{data.subject}}"></rich-text>
+      <view class="_div data-v-7a6996b0 author">
+        <view class="_p data-v-7a6996b0">
+          {{ data.nickName }}
+        </view>
+        <view class="_p data-v-7a6996b0">
+          {{ data.dateline_txt }}
+        </view>
+      </view>
+      <rich-text class="_div data-v-7a6996b0 content" nodes="{{data.content}}"></rich-text>
+    </view>
+  </view>
+</template>

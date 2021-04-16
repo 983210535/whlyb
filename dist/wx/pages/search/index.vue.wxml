@@ -1,0 +1,14 @@
+<import src="/components/searchview/index.vue.wxml" /><template name="1a0eb359">
+  <view class="_div data-v-30255504 main">
+    <van-search value="{{value}}" bindchange="handleProxy" placeholder="请输入关键词或查询码进行查询" use-action-slot custom-class="key" field-class="keyInput" background="#fff" focus data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_van-search data-v-30255504"></van-search>
+    <view class="_div data-v-30255504 xbox" wx:if="{{lsss}}">
+      <view class="_div data-v-30255504 clear"><label class="_span data-v-30255504">历史搜索</label> <label bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_span data-v-30255504">清空</label></view>
+      <view class="_div data-v-30255504 box"><label class="_span data-v-30255504 search" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'2_'+index}}" data-comkey="{{$k}}" wx:for="{{history}}" wx:for-index="index" wx:for-item="item">
+          {{ item }}
+        </label></view>
+    </view>
+    <view wx:if="{{isSearch}}" class="_div data-v-30255504"><template data="{{...$root[$kk+'1'], $root}}" is="02f699f6"></template>
+      <view class="_div data-v-30255504 nodata" hidden="{{!(nodatashow)}}">无更多数据</view>
+    </view>
+  </view>
+</template>

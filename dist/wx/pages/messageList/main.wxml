@@ -1,0 +1,1 @@
+<import src="/pages/messageList/index.vue.wxml" /><template is="450c6850" data="{{ ...$root['0'], $root }}"/>

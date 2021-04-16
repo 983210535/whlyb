@@ -1,0 +1,125 @@
+@import "../../common/vendor.wxss";
+
+page.data-v-64241dcc {
+  background: #fff;
+}
+.main.data-v-64241dcc {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  font-size: 28rpx;
+}
+.tabBox.data-v-64241dcc {
+  border-radius: 20rpx;
+  padding: 30rpx;
+  box-shadow: 0 0 20rpx 0 #e5e5e5;
+  margin: 30rpx;
+}
+.title.data-v-64241dcc {
+  padding: 10rpx 0 0;
+  border-bottom: 2rpx dashed #e5e5e5;
+}
+.title ._i.data-v-64241dcc {
+  display: inline;
+  color: #c9c9c9;
+  font-size: 24rpx;
+  margin-left: 12rpx;
+}
+.tabList.data-v-64241dcc {
+  overflow: hidden;
+  line-height: 60rpx;
+}
+.listBox.data-v-64241dcc {
+  padding: 20rpx 0;
+}
+.usericon.data-v-64241dcc {
+  width: 104rpx;
+  height: 104rpx;
+  overflow: hidden;
+  border-radius: 50%;
+  background: pink;
+  float: left;
+}
+.usericon ._img.data-v-64241dcc {
+  width: 100%;
+  height: 100%;
+}
+.depName.data-v-64241dcc {
+  width: 104rpx;
+  text-align: center;
+  font-size: 24rpx;
+  color: #999;
+  line-height: 104rpx;
+  float: left;
+}
+.list_l.data-v-64241dcc {
+  float: left;
+}
+.list_r.data-v-64241dcc {
+  float: right;
+  color: #999;
+  line-height: 104rpx;
+  font-size: 24rpx;
+}
+.imgUpload.data-v-64241dcc {
+  width: 128rpx;
+  height: 128rpx;
+  border: 2rpx dashed #61a8f1;
+  border-radius: 12rpx;
+  font-size: 36rpx;
+  color: #61a8f1;
+  line-height: 128rpx;
+  text-align: center;
+}
+.imgList.data-v-64241dcc {
+  width: 120rpx;
+  height: 120rpx;
+  float: left;
+  margin: 0 30rpx 20rpx 0;
+  padding: 10rpx;
+  border-radius: 10rpx;
+  box-shadow: 0 0 8rpx 0 #e5e5e5;
+  position: relative;
+}
+.delBtn.data-v-64241dcc {
+  position: absolute;
+  top: -12rpx;
+  right: 0;
+  color: #999;
+}
+.imgList ._img.data-v-64241dcc {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.imgBox.data-v-64241dcc {
+  margin-top: 40rpx;
+  overflow: hidden;
+}
+._button.data-v-64241dcc {
+  width: 80%;
+  background: #61a8f1;
+  color: #fff;
+  margin: 60rpx auto;
+}
+._textarea.data-v-64241dcc {
+  width: 100%;
+}
+.inpBox.data-v-64241dcc {
+  padding: 16rpx 0;
+  border-bottom: 2rpx dashed #e5e5e5;
+}
+.topinput.data-v-64241dcc {
+  border-bottom: 2rpx dashed #e5e5e5;
+}
+.checkdiv.data-v-64241dcc {
+  overflow: hidden;
+  padding: 10rpx 0;
+  border-bottom: 2rpx dashed #e5e5e5;
+}
+.checkdiv .fll.data-v-64241dcc {
+  float: left;
+}
+.checkdiv .flr.data-v-64241dcc {
+  float: right;
+}
